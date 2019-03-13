@@ -1,0 +1,144 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# SERBAGUNA TOOLS
+#coded by Mr.Rm19
+clear
+
+blue='\e[0;34'
+cyan='\e[0;36m'
+green='\e[0;34m'
+okegreen='\033[92m'
+lightgreen='\e[1;32m'
+white='\e[1;37m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+
+###################################################
+# CTRL C
+###################################################
+trap ctrl_c INT
+ctrl_c() {
+clear
+echo -e $red"[#]> (Ctrl + C ) Detected, Trying To Exit ... "
+sleep 1
+echo ""
+echo -e $green"[#]> Terima kasih sudah make tools saya ... "
+sleep 1
+echo ""
+echo -e $white"[#]> Mr.Rm19"
+read enter
+exit
+}
+
+echo -e $red"         ***********************************************"
+echo -e $white"          $red toolkit for checker akun all          $white "
+echo -e $red"          $red happy fun guys                $red       "
+echo -e $white"          $red contact: ramdan19id@gmail.com $white   "
+echo -e $white"          $white copyright : Mr.Rm19   2019     $white    "
+echo -e $white"         ***********************************************"
+echo ""
+echo -e $green" 01) point blank checker"
+echo -e $green" 02) phd checker"
+echo -e $green" 03) amazon  checker             "
+echo -e $green" 04) apple checker "
+echo -e $green" 05) paypal checker"
+echo -e $green" 06) spotify checker"
+echo -e $green" 00) exit"
+echo -e $white""
+read -p "[Mr.Rm19@tools]> " act;
+
+if [ $act = 01 ] || [ $act = 01 ]
+then
+clear
+echo -e $green" Installing pointblank checker "
+sleep 1
+apt update && apt upgrade
+apt install git
+apt install curl
+apt install python2
+curl -O https://raw.githubusercontent.com/Rmdn19id/trash/master/pb.py
+echo -e $green" cara pakai : python2 pb.py"
+fi
+
+if [ $act = 02 ] || [ $act = 02 ]
+then
+clear
+echo -e $green" Installing phd checker "
+sleep 1
+apt update && apt upgrade
+apt install git
+apt install curl
+apt install python2
+curl -O https://raw.githubusercontent.com/Rmdn19id/trash/master/phd.py
+echo -e $green" cara pakai : python2 phd.py "
+fi
+
+if [ $act = 03 ] || [ $act = 03 ]
+then
+clear
+echo -e $green" Installing Amazon Checker "
+sleep 1
+apt update && apt upgrade
+apt install git
+apt install curl
+apt install python2
+curl -O https://raw.githubusercontent.com/Rmdn19id/trash/master/amazon.py
+echo -e $green" cara pakai : python2 amazon.py "
+fi
+
+if [ $act = 04 ] || [ $act = 04 ]
+then
+clear
+echo -e $green" Installing apple checker"
+sleep 1
+apt update && apt upgrade
+apt install git
+apt install curl
+apt install python2
+curl -O https://raw.githubusercontent.com/Rmdn19id/trash/master/apple.py
+echo -e $green" cara pakai : python2 apple.py"
+fi
+
+if [ $act = 05 ] || [ $act = 05 ]
+then
+clear
+echo -e $green" Installing paypal checker"
+sleep 1
+apt update && apt upgrade
+apt install git
+apt install curl
+apt install python2
+curl -O https://raw.githubusercontent.com/Rmdn19id/trash/master/paypal.py
+echo -e $green" cara pakai : python2 paypal.py"
+fi
+
+if [ $act = 06 ] || [ $act = 06 ]
+then
+clear
+echo -e $green" Installing spotify checker"
+sleep 1
+apt update && apt upgrade
+apt install git
+apt install curl
+apt install python2
+curl -O https://raw.githubusercontent.com/Rmdn19id/trash/master/spotify.py
+echo -e $green" cara pakai : python2 spotify.py"
+fi
+
+if [ $act = 00 ] || [ $act = 00 ]
+then
+echo -e $green" pesan terakhir "
+sleep 1
+echo -e $green" dear jomblo "
+sleep 1
+echo -e $green" jangan coli mulu cuk "
+sleep 1
+echo -e $green" Please Wait.... "
+sleep 1
+echo -e $green" contact : ramdan19id@gmail.com "
+sleep 1
+echo -e $red" fb : https://www.facebook.com/c0d3c0d3c0d3 "
+sleep 1
+echo -e $red" Bye ea :* "
+sleep 1
+exit
+fi
